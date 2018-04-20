@@ -1,6 +1,6 @@
-
+[Homepage of blog-](https://caffreit.github.io/blog-/)
 # Predicting if someone is a member of a club or not.
-
+[Homepage of blog-](https://caffreit.github.io/blog-/)
 
 ```python
 import pandas as pd
