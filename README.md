@@ -48,19 +48,7 @@ data.head(10)
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -268,19 +256,7 @@ df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -365,10 +341,7 @@ from sklearn.grid_search import GridSearchCV
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 ```
 
-    C:\ProgramData\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
-      "This module will be removed in 0.20.", DeprecationWarning)
-    C:\ProgramData\Anaconda2\lib\site-packages\sklearn\grid_search.py:43: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. This module will be removed in 0.20.
-      DeprecationWarning)
+
     
 
 
@@ -397,7 +370,7 @@ print(classification_report(y_test,rfc_preds))
     
     
 
-## Optimising Hyperparameter
+## Optimising Hyperparameters
 
 
 ```python
@@ -447,17 +420,7 @@ rf_random.fit(X_train,y_train)
 
 
 
-    RandomizedSearchCV(cv=3, error_score='raise',
-              estimator=RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-                max_depth=None, max_features='auto', max_leaf_nodes=None,
-                min_impurity_split=1e-07, min_samples_leaf=1,
-                min_samples_split=2, min_weight_fraction_leaf=0.0,
-                n_estimators=200, n_jobs=1, oob_score=False, random_state=None,
-                verbose=0, warm_start=False),
-              fit_params={}, iid=True, n_iter=50, n_jobs=2,
-              param_distributions={'bootstrap': [True, False], 'min_samples_leaf': [1, 2, 4], 'n_estimators': [100, 575, 1050, 1525, 2000], 'min_samples_split': [5, 10], 'max_features': ['auto'], 'max_depth': [5, 10, 15, 20, 25, None]},
-              pre_dispatch='2*n_jobs', random_state=42, refit=True,
-              return_train_score=True, scoring=None, verbose=0)
+
 
 
 
@@ -519,19 +482,7 @@ df1.tail()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -651,19 +602,7 @@ holdout_data.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -772,7 +711,3 @@ print feature_importances
     [('Total_Runs', 0.32), ('Time', 0.22), ('Run_No.', 0.18), ('Pos', 0.16), ('Age_Cat', 0.12)]
     
 
-
-```python
-
-```
